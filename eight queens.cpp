@@ -1,6 +1,6 @@
 // try to solve eight queens problem
 /*
-//mine  ver1.0  ¸´ÔÓ 
+//mine  ver1.0  å¤æ‚ 
 #include <stdio.h>
 
 int main()
@@ -52,7 +52,7 @@ int main()
                                                             else
                                                             {
                                                                 a[7][i8] = 1;
-                                                                //Ğ±Ïò¼ìÑé 
+                                                                //æ–œå‘æ£€éªŒ 
                                                                 for (int m=0,n=0;m<8;m++,n=0)
                                                                 {
                                                                     int m1 = m,sum=0;
@@ -252,13 +252,13 @@ int main()
                 arr[1][i2] = 0;
             }
     }
-    printf("%dÖÖ", m);
+    printf("%dç§", m);
     return 0;
-}//Ğ±Ïò¼ìÑéÓĞËù¼ò»¯ 
+}//æ–œå‘æ£€éªŒæœ‰æ‰€ç®€åŒ– 
 */
 
 /*
-//ver 2.0  ¶şÎ¬Êı×é£¬½øÒ»²½ÓÅ»¯»ØËİËã·¨²¢ÓÃĞ±ÂÊµÄ¾ø¶ÔÖµ¼ìÑéĞ±Ïò
+//ver 2.0  äºŒç»´æ•°ç»„ï¼Œè¿›ä¸€æ­¥ä¼˜åŒ–å›æº¯ç®—æ³•å¹¶ç”¨æ–œç‡çš„ç»å¯¹å€¼æ£€éªŒæ–œå‘
 #include<stdio.h>
 int check(int a[][8], int row, int col);
 int main()
@@ -343,7 +343,7 @@ int check(int a[][8], int row, int col)
         {
             if (a[i][n])
             {
-                double k = 1.0*(col - n) / (row - i);//³ı·¨Ä¬ÈÏÎªÕû³ı£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+                double k = 1.0*(col - n) / (row - i);//é™¤æ³•é»˜è®¤ä¸ºæ•´é™¤ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
                 if (k==1||k==-1)
                 {
                     a[row][col] = 0;
@@ -359,10 +359,10 @@ int check(int a[][8], int row, int col)
  */
 
 /*
-//ver 3.0 ±ä¸üÎªÒ»Î¬Êı×é£¬Îªn»ÊºóÎÊÌâÆÌµæ
+//ver 3.0 å˜æ›´ä¸ºä¸€ç»´æ•°ç»„ï¼Œä¸ºnçš‡åé—®é¢˜é“ºå«
 #include<stdio.h>
 
-//checkº¯Êı¿É¸´ÓÃ£¬½«ÁĞ¸ÄÎª¶ÔÓ¦Öµ¼´¿É
+//checkå‡½æ•°å¯å¤ç”¨ï¼Œå°†åˆ—æ”¹ä¸ºå¯¹åº”å€¼å³å¯
 int check(int *a, int row)
 {
     //check col
@@ -376,7 +376,7 @@ int check(int *a, int row)
     //check lean
     for (int i = 0; i < row; i++)
     {
-        double k = 1.0 * (a[row] - a[i])/ (row - i);//³ı·¨Ä¬ÈÏÎªÕû³ı£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        double k = 1.0 * (a[row] - a[i])/ (row - i);//é™¤æ³•é»˜è®¤ä¸ºæ•´é™¤ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         if (k == 1 || k == -1)
         {
             return 0;
@@ -440,14 +440,14 @@ int main()
     printf("root=%d", root);
     return 0;
 }
-//¹ş¹ş¹ş£¬Ò»±é¹ı
+//å“ˆå“ˆå“ˆï¼Œä¸€éè¿‡
 */
 
-/*
-//ver 4.0 ÍØÕ¹ÖÁn»Êºó
+
+//ver 4.0 æ‹“å±•è‡³nçš‡å
 #include<stdio.h>
 
-//checkº¯ÊıÈÔ¿É¸´ÓÃ£¬ÇÒÎŞĞèĞŞ¸Ä     
+//checkå‡½æ•°ä»å¯å¤ç”¨ï¼Œä¸”æ— éœ€ä¿®æ”¹     
 
 int check(int* a, int row)
 {
@@ -462,7 +462,7 @@ int check(int* a, int row)
     //check lean
     for (int i = 0; i < row; i++)
     {
-        double k = 1.0 * (a[row] - a[i]) / (row - i);//³ı·¨Ä¬ÈÏÎªÕû³ı£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        double k = 1.0 * (a[row] - a[i]) / (row - i);//é™¤æ³•é»˜è®¤ä¸ºæ•´é™¤ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         if (k == 1 || k == -1)
         {
             return 0;
@@ -479,14 +479,14 @@ int main()
 {
     int n;
    
-    printf("ÇëÊäÈë»ÊºóµÄ¸öÊın(0<n<1000)\n(ÊäÈëÈÎÒâ×ÖÄ¸»òÊäÈëÈÎÒâ¸ÃÇø¼äÒÔÍâµÄÕûÊıÒÔ½áÊø)\n");
-    //Íâ²¿ÊäÈëÈÎÒâµÄn
+    printf("è¯·è¾“å…¥çš‡åçš„ä¸ªæ•°n(0<n<1000)\n(è¾“å…¥ä»»æ„å­—æ¯æˆ–è¾“å…¥ä»»æ„è¯¥åŒºé—´ä»¥å¤–çš„æ•´æ•°ä»¥ç»“æŸ)\n");
+    //å¤–éƒ¨è¾“å…¥ä»»æ„çš„n
     while (scanf_s("%d", &n) == 1 && n > 0&&n<1000)
     {
         int max = n;
         int a[1000] = { 0 };
         queen(a, n,max);
-        printf("%d»Êºó¹²ÓĞ%d¸ö½â\n\n",n, root);
+        printf("%dçš‡åå…±æœ‰%dä¸ªè§£\n\n",n, root);
         root = 0;
     }
     return 0;
@@ -522,11 +522,11 @@ void queen(int* a, int n,int max)
     }
 
 }
-//´ó»ñ³É¹¦£¡
-
-*/
+//å¤§è·æˆåŠŸï¼
 
 
+
+/*
 #include<stdio.h> 
 #include<stdlib.h>
 
@@ -543,7 +543,7 @@ int check(int* a, int row)
     //check lean
     for (int i = 0; i < row; i++)
     {
-        double k = 1.0 * (a[row] - a[i]) / (row - i);//³ı·¨Ä¬ÈÏÎªÕû³ı£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        double k = 1.0 * (a[row] - a[i]) / (row - i);//é™¤æ³•é»˜è®¤ä¸ºæ•´é™¤ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         if (k == 1 || k == -1)
         {
             return 0;
@@ -564,7 +564,7 @@ int main()
     int* a = (int*)malloc(max * sizeof(int));
     queen(a, n, max);
     if (root) printf("%d", root);
-    else printf("ÎŞ½â");
+    else printf("æ— è§£");
     return 0;
 }
 
@@ -592,3 +592,5 @@ void queen(int* a, int n, int max)
     }
 
 }
+
+*/
